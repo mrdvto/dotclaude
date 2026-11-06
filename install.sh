@@ -4,6 +4,7 @@ set -euo pipefail
 SRC="$(cd "$(dirname "$0")" && pwd)"
 DEST="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 mkdir -p "$DEST/agents" "$DEST/skills"
+rm -f "$DEST/agents/Plan.md"  # old override that never took effect
 cp "$SRC"/agents/*.md "$DEST/agents/"
 cp -r "$SRC"/skills/. "$DEST/skills/"
 # Replace (or add) the managed block in the global CLAUDE.md, leaving anything else intact.

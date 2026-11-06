@@ -2,7 +2,7 @@
 
 My Claude Code user config, installed into `~/.claude` so it works in cloud sessions (which only see the repo, not my machine).
 
-- `agents/`: Explore (Sonnet, overrides built-in), Plan (Opus, medium effort, delegates to Explore), researcher, code-reviewer, test-runner (Sonnet)
+- `agents/`: Explore (Sonnet, overrides built-in), planner (Opus, medium effort, delegates to Explore; replaces built-in Plan, which cannot be overridden by name), researcher, code-reviewer, test-runner (Sonnet)
 - `skills/ponytail-review/`: vendored from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT, see its LICENSE), preloaded by code-reviewer
 - `CLAUDE.md`: subagent delegation rules (merged into `~/.claude/CLAUDE.md` as a managed block)
 

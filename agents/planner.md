@@ -1,6 +1,6 @@
 ---
-name: Plan
-description: Designs implementation plans before code is written. Use for non-trivial features, refactors, or multi-file changes. Delegates codebase searching to the Explore subagent.
+name: planner
+description: Designs implementation plans before code is written. Use proactively, instead of the built-in Plan agent, for any non-trivial feature, refactor, or multi-file change. Delegates codebase searching to the Explore subagent.
 tools: Read, Grep, Glob, Agent
 model: opus
 effort: medium
